@@ -1,6 +1,8 @@
 const LandingPage = () =>{
     return(
-        <>Hello SP404SX user!</>
+        <dir className="landingPage">
+            HELLO SP404SX USER!
+        </dir>
     )
 }
 export default LandingPage;

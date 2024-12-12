@@ -13,6 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  margin: 0;
+  overflow: hidden;
+  font-family: airbolt !important;
+  letter-spacing: 1px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
