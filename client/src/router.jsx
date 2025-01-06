@@ -4,7 +4,8 @@ import {
     LandingPage,
     LoginPage,
     ErrorPage,
-    RegisterPage
+    RegisterPage,
+    LoadoutPage
 } from "./pages/index"
 import Layout from "./layout";
 
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
             {
                 index:true,
                 element:<LandingPage />,
+            },
+            {
+                path:"/loadout",
+                element:<LoadoutPage />,
             },
             {
                 path:"/login",

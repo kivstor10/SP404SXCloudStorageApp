@@ -6,26 +6,31 @@ import SubmitButton from './SubmitButton';
 const LoginForm = () => {
   return (
     <div className='login-form'>
-      <h4>Please Login</h4>
       <Form method='POST'>
+        <br />
         <label>email</label>
+        <br />
         <FormInput 
           type="text"
           label="email"
           name="identifier"
           placeholder="email"
         />
+        <br /><br />
         <label>Password</label>
+        <br />
         <FormInput 
           type="password"
           label="password"
           name="password"
           placeholder="********"
         />
+        <br /><br />
         <SubmitButton /> 
       </Form>
+      <br />
       <p>
-        Don't have an account? <Link to="/register">Register here</Link>
+        Don't have an account? <Link to="/register"><br />Register here</Link>
       </p>
     </div>
   );

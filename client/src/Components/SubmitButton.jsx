@@ -16,7 +16,7 @@ const SubmitButton = ({ text }) => {
           submitting...
         </>
       ) : (
-        text || "submit"
+        text || "LOGIN"
       )}
     </button>
   );
