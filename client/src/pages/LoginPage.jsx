@@ -1,9 +1,9 @@
-import React from 'react'
-import LoginForm from '../components/LoginForm'
-import { loginUser } from '../store/appUserSlice'
-import { LOGINURL } from './data'
-import { redirect } from 'react-router-dom'
-import axios from 'axios'
+import React from 'react';
+import LoginForm from '../Components/LoginForm';
+import { loginUser } from '../store/appUserSlice';
+import { LOGINURL } from './data';
+import { redirect } from 'react-router-dom';
+import axios from 'axios';
 
 export const action = (store) => 
   async ({request}) => {
