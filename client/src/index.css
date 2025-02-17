@@ -116,20 +116,44 @@ button {
   padding: 0;
 }
 
+.LoadoutMenuContainer > ol > li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+}
+
 .LoadoutMenuContainer > ol > li > a{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  border-radius: 5px;
   color: #242424;
   font-size: 15px;
 }
 
-.LoadoutMenuContainer > ol > li > a > img.OptionsIcon{
+.LoadoutMenuContainer > ol > li > div{
+  display: flex;
   margin-left: auto;
   margin-right: 10px;
+}
+
+.LoadoutMenuContainer > ol > li > div > button{
+  border: none;
+}
+
+.LoadoutMenuContainer > ol > li > a > div > button{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  z-index: 100;
+  border-radius: 0;
+}
+
+.LoadoutMenuContainer > div > button > img{
+  margin-left: auto;
 }
 
 .LoadoutMenuContainer > ol > li.active{
@@ -174,7 +198,7 @@ button {
 }
 
 .ViewLoadout > ol > li{
-  padding: 5px 10px;
+  padding: 8px 15px;
 }
 
 .ViewLoadout > ol > li > img{
@@ -188,12 +212,11 @@ button {
 .welcome-page-container{
   display: flex;
   place-items: center;
-  padding: 50px 0;
   background-image: url('./assets/LoginBG.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: min-content;
+  min-height: 100vh;
   width: 100vw;
 }
 

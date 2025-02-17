@@ -5,7 +5,7 @@ const LoadoutMenu = () =>{
     return(
         <div className="LoadoutMenuContainer">
             <ol>
-                <LoadoutItem />
+                <LoadoutItem active="active"/>
             </ol>
             <div className="addNewLoadoutButton">
                 <img src={AddNewIcon} alt="Add new loadout" />

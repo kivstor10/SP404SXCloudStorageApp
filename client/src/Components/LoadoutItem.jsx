@@ -1,15 +1,22 @@
 import { Link } from "react-router-dom"
 import LoadoutIcon from '../assets/LoadoutIcon.svg'
 import LoadoutOptions from '../assets/LoadoutOptions.svg'
+import MenuButton from "./MenuButton"
 
-const LoadoutItem = () =>{
+const LoadoutItem = ({active = ""}) =>{
+    const handleClick = (event) =>{
+        event.stopPropagation();
+    }
+
     return(
-        <li className="active">
+        <li className={active}>
             <Link to="/loadout">
                 <img src={LoadoutIcon} alt="Add new loadout" />
                 Loadout 1
-                <img className="OptionsIcon" src={LoadoutOptions} alt="Add new loadout" />
             </Link>
+            <div onClick={handleClick}>
+                    <MenuButton />
+            </div>
         </li>
     )
 }
