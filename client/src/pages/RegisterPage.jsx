@@ -1,5 +1,5 @@
 import React from 'react';
-import RegisterForm from '../components/RegisterForm';
+import RegisterForm from '../Components/RegisterForm';
 import axios from 'axios';
 import { REGISTERURL } from '../pages/data';
 import { redirect } from 'react-router-dom';
