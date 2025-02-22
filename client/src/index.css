@@ -13,10 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'Airbolt';
+  src: url('server\fonts\AIRBOLT-AIRBOLT-REGULAR-400.OTF') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   margin: 0;
   overflow: hidden;
-  font-family: airbolt !important;
+  font-family: 'Airbolt', sans-serif !important;
   letter-spacing: 1px;
 }
 
