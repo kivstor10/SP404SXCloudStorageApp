@@ -245,6 +245,8 @@ button {
   margin-bottom: 5px;
 }
 .welcome-page-container > div{
+  display: flex;
+  flex-direction: column;
   margin: auto 0;
 }
 
@@ -257,6 +259,11 @@ button {
   padding: 20px 40px;
   width: 80%;
   max-width: 330px;
+  margin: 0 auto;
+}
+
+.login-form > form{
+  max-width: 260px;
 }
 
 .login-form > form > button{

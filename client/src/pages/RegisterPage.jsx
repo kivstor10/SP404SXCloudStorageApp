@@ -41,8 +41,11 @@ export const action = async ({ request }) => {
 
 const RegisterPage = () => {
   return (
-    <div className='login-page-container'>
-      <RegisterForm />
+    <div className='welcome-page-container'>
+      <div>
+        <h1>Register</h1>
+        <RegisterForm />
+      </div>
     </div>
   );
 };

@@ -10,22 +10,26 @@ import SubmitButton from './SubmitButton';
 const RegisterForm = () => {
   return (
     <div className='login-form'>
-      <h4>Please Registser</h4>
       <Form method='POST'>
+        <br />
         <label>Username</label>
+        <br />
         <FormInput 
           type="text"
           label="username"
           name="username"
           placeholder="username"
         />
+        <br /><br />
         <label>Email</label>
+        <br />
         <FormInput 
           type="email"
           label="email"
           name="email"
           placeholder="email"
         />
+        <br /><br />
         <label>Password</label>
         <FormInput 
           type="password"
@@ -33,11 +37,10 @@ const RegisterForm = () => {
           name="password"
           placeholder="********"
         />
+        <br /><br />
         <SubmitButton /> 
       </Form>
-      <p>
-        Already have an account? <Link to="/login">Login here</Link>
-      </p>
+      <br />
     </div>
   );
 };
