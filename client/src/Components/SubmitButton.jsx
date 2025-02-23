@@ -6,19 +6,21 @@ const SubmitButton = ({ text }) => {
   const isSubmitting = navigation.state === "submitting";
 
   return (
-    <button
-      className='btn'
-      disabled={isSubmitting}
-    >
-      {isSubmitting ? (
-        <>
-          <span className='loading loading-spinner'></span>
-          submitting...
-        </>
-      ) : (
-        text || "LOGIN"
-      )}
-    </button>
+    <div>
+      <button
+        className='btn'
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? (
+          <>
+            <span className='loading loading-spinner'></span>
+            submitting...
+          </>
+        ) : (
+          text || "LOGIN"
+        )}
+      </button>
+    </div>
   );
 };
 

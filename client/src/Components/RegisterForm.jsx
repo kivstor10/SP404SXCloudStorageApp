@@ -11,9 +11,7 @@ const RegisterForm = () => {
   return (
     <div className='login-form'>
       <Form method='POST'>
-        <br />
         <label>Username</label>
-        <br />
         <FormInput 
           type="text"
           label="username"
@@ -22,7 +20,6 @@ const RegisterForm = () => {
         />
         <br /><br />
         <label>Email</label>
-        <br />
         <FormInput 
           type="email"
           label="email"
