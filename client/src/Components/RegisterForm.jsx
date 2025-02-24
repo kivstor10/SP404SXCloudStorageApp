@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form } from 'react-router-dom';
 import FormInput from './FormInput';
 import SubmitButton from './SubmitButton';
-import { Auth } from 'aws-amplify/auth'; 
+
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
