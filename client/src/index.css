@@ -195,6 +195,10 @@ button {
   color: #F28E32;
 }
 
+#root > div > main > div > div:nth-child(4){
+  margin: auto;
+}
+
 .ViewLoadout {
   border-radius: 5px;
   background-color: #DECFC2;

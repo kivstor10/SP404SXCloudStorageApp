@@ -2,7 +2,27 @@ import { Link } from "react-router-dom"
 import Navbar from "../Components/Navbar"
 import Chevron from "../assets/Chevron.svg"
 
+import React from 'react';
+import { uploadData } from 'aws-amplify/storage';
+
 const LoadoutPage = (id) =>{
+
+    const [file, setFile] = React.useState();
+
+    const handleChange = (event) => {
+        setFile(event.target.files?.[0]);
+        };
+
+    const handleClick = () => {
+        if (!file) {
+          return;
+        }
+        uploadData({
+          path: ({identityId}) => `audioFiles/${identityId}/A1.WAV`,
+          data: file,
+        });
+      };
+
     return (
         <div className="LoadoutPageContainer">
             <Navbar />
@@ -61,8 +81,14 @@ const LoadoutPage = (id) =>{
                     </li>
                 </ol>
             </div>
+            <div>
+                <input type="file" onChange={handleChange} />
+                <button onClick={handleClick}>Upload</button>
+            </div>
         </div>
     )
 }
 
 export default LoadoutPage
+
+
