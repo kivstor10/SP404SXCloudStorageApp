@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './router';
-import { Authenticator } from '@aws-amplify/ui-react';  // Import Authenticator
+import { Authenticator } from 'aws-amplify';  // Import Authenticator
 import '@aws-amplify/ui-react/styles.css';  // Import styles for the authenticator
 
 function App() {
